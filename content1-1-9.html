@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>swuply</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/content_detail_style.css">
+</head>
+
+
+<!-- *********************************body******************************* -->
+
+<body>
+
+  <!-- <애니메이션 코드> -->
+  <script>
+    function playAudio(img) {
+      var audio = document.getElementById('audio');
+      if (audio.paused) {
+        audio.play(); // 음악 재생
+        img.style.animationPlayState = 'running'; // 이미지의 애니메이션 실행 시작
+        img.style.animationDuration = '100s'; // 애니메이션 속도를 5초로 설정 (원하는 값으로 수정)
+      } else {
+        audio.pause(); // 음악 일시 정지
+        img.style.animationPlayState = 'paused'; // 이미지의 애니메이션 일시 정지
+      }
+    }
+  </script>
+  <!-- <애니메이션 코드> -->
+
+  <!-- { 네비게이션 바 영역 시작 }  -->
+  <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
+    <div class="container-fluid ms-5">
+      <!-- [브랜드 로고 영역] -->
+      <a class="navbar-brand" href="Main.html"><!-- 로고 클릭 시 메인페이지로 이동 -->
+        <i class="bi bi-vinyl"></i>
+        <span class="ms-1">SWUPLY</span>
+      </a>
+
+      <!-- [반응형 위한 토글 버튼] -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- [네비게이션 내용 (토글과 id연결)] -->
+      <div class="collapse navbar-collapse" style="margin-left: auto;" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <!-- [홈] -->
+          <li class="nav-item">
+            <a class="nav-link" href="Main.html">홈</a>
+          </li>
+          <!-- [슈플리 소개] -->
+          <li class="nav-item">
+            <a class="nav-link" href="Main.html#about_service">슈플리 소개</a>
+          </li>
+          <!-- [제작자 소개] -->
+          <li class="nav-item">
+            <a class="nav-link" href="Main.html#about_producer">제작자 소개</a>
+          </li>
+          <!-- [슈플리 듣기 - 드롭다운] -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle  me-5" href="check_my_music.html" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              슈플리 듣기
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark ">
+              <!-- 어두운 테마 사용 및 3가지의 드롭다운 내용 -->
+              <li><a class="dropdown-item text-white " href="content1.html">1번 슈플리</a></li>
+              <li><a class="dropdown-item text-white" href="content2.html">2번 슈플리</a></li>
+              <li><a class="dropdown-item text-white" href="content3.html">3번 슈플리</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- { 네비게이션 바 영역 끝 } -->
+
+  <audio id="audio" src="musics/3-3 summer.mp3" controls></audio>
+
+  <!-- 메인 노래 소개 글 시작****************** -->
+  <section class="container py-5" style="margin-top: 30px;">
+
+    <div class="row justify-content-end align-content-end mb-5">
+      <div class="col-xl-5">
+        <!-- 사진 원 모양 시작 -->
+        <div class="circle-image-container me-5">
+          <img src="images/play_009.png" alt="009" onclick="playAudio(this)">
+        </div>
+        <!-- 사진 원 모양 끝-->
+      </div>
+      <div class="col-xl-5 p-5">
+        <h2 class="fw-bold mb-3">Summer</h2>
+        <h3>Bensound</h3>
+        <p class="lh-lg">끓어오르는 여름을 식혀주는 상큼한 비트와 신나는 리듬이 어울어진 음악. 더운 날씨에 피로를 날려주며 활기찬 에너지를 선사하는 특별한 곡.</p>
+      </div>
+    </div>
+  </section>
+  <!-- 메인 노래 소개 글 끝****************** -->
+
+  <!-- 메세지 보내기 네비게이션 바 시작 -->
+  <nav class="navbar fixed-bottom navbar-dark bg-dark">
+    <div class="container-fluid">
+      <ul class="navbar-nav">
+        <li class="nav-item  ms-5"><a class="nav-link" href="#">슈니들에게 응원 한마디를 남겨주세요</a></li>
+      </ul>
+
+      <form class="d-flex ms-5 me-5">
+        <input class="form-control me-2 rounded-pill px-4" type="search" placeholder="오늘도 수고했어요" aria-label="Search">
+        <button class="btn btn-outline-light rounded-pill" type="submit">Send</button>
+      </form>
+    </div>
+  </nav>
+  <!-- 메세지 보내기 네비게이션 바 끝 -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+
+
+
+</body>
+
+</html>

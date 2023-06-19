@@ -1,0 +1,456 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SWUPLY</title>
+
+    <!-- 부트스트랩 CDN과 Icon Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/MainStyle.css">
+
+    <!-- 구글 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- { 네비게이션 바 영역 시작 }  -->
+    <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
+        <div class="container-fluid ms-5">
+            <!-- [브랜드 로고 영역] -->
+            <a class="navbar-brand" href="Main.html"><!-- 로고 클릭 시 메인페이지로 이동 -->
+                <i class="bi bi-vinyl"></i>
+                <span class="ms-1">SWUPLY</span>
+            </a>
+
+            <!-- [반응형 위한 토글 버튼] -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- [네비게이션 내용 (토글과 id연결)] -->
+            <div class="collapse navbar-collapse" style="margin-left: auto;" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <!-- [홈] -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">홈</a>
+                    </li>
+                    <!-- [슈플리 소개] -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about_service">슈플리 소개</a>
+                    </li>
+                    <!-- [제작자 소개] -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about_producer">제작자 소개</a>
+                    </li>
+                    <!-- [슈플리 듣기 - 드롭다운] -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle  me-5" href="check_my_music.html" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            슈플리 듣기
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark ">
+                            <!-- 어두운 테마 사용 및 3가지의 드롭다운 내용 -->
+                            <li><a class="dropdown-item text-white " href="content1.html">1번 슈플리</a></li>
+                            <li><a class="dropdown-item text-white" href="content2.html">2번 슈플리</a></li>
+                            <li><a class="dropdown-item text-white" href="content3.html">3번 슈플리</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- { 네비게이션 바 영역 끝 } -->
+
+    <!-- { 헤더 영역 시작 : id=home } -->
+    <header id="home" class="d-flex flex-column justify-content-center align-items-start">
+        <!-- [텍스트 부분 디자인] -->
+        <div class="container m-10">
+            <h1 class="fw-bold display-3">나만의</h1>
+            <h4 class="fs-2 ">플레이 리스트를 듣다,</h4>
+            <p class="explain mb-5">무언가에 집중해야하는 당신을 위한<br />
+                맞춤형 플레이리스트 웹사이트에 초대합니다.</p>
+
+            <!-- 인라인 스타일을 통한 버튼 상세디자인 -->
+            <a class="btn btn-outline-dark rounded-pill mt-4" style="font-family: 'NanumGothic'; font-style: normal; font-size: 25px; font-weight: 700; border-width: 3px;
+             gap: 10px; padding: 16px 48px;" href="SubPage.html" role="button">SWUTART<i
+                    class="bi bi-arrow-right ms-2"></i></a>
+        </div>
+    </header>
+    <!-- { 헤더 영역 끝 } -->
+
+    <!-- { 서비스 소개 영역 시작 : id=about_service }-->
+    <section id="about_service" class="d-flex flex-column justify-content-center align-items-center p-5">
+        <!-- [텍스트 부분 디자인] -->
+        <div class=" text-center py-5">
+            <h2 class="fw-bold">SWUPLY</h2>
+            <p class="explain">우리 SWUPLY에서는 시험과 과제 등 선택과 집중이 필요한 시기에<br /> 여러분을 도와드릴 배경 음악 플레이리스트를 추천해드립니다.</p>
+        </div>
+        <!-- [반응형 3개의 column 이미지 박스] -->
+        <div class="row w-75 row-cols-1 row-cols-md-3 g-4 my-5">
+            <!-- [첫번째 서비스 소개 영역] -->
+            <div class="col">
+                <div id="swuImg" class="card  text-bg-dark rounded-pill"><!-- hover효과 : 110%커짐 -->
+                    <img src="images/Home_about_service_1.png" class="card-img " alt="슈플리1">
+                    <!-- [이미지 오버레이 버튼 영역] -->
+                    <div class="card-img-overlay align-items-center" style="display: flex; justify-content: center; ">
+                        <!-- 버튼 클릭 시 관련 디테일 내용 모달 연결 -->
+                        <button type="button" class="btn btn-outline-light rounded-pill" style=" align-self: flex-end;"
+                            data-bs-toggle="modal" data-bs-target="#serviceModal1">
+                            Classic
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- [두번째 서비스 소개 영역] -->
+            <div class="col">
+                <div id="swuImg" class="card  text-bg-dark rounded-pill"><!-- hover효과 : 110%커짐 -->
+                    <img src="images/Home_about_service_2.png" class="card-img " alt="슈플리2">
+                    <!-- [이미지 오버레이 버튼 영역] -->
+                    <div class="card-img-overlay align-items-center" style="display: flex; justify-content: center; ">
+                        <!-- 버튼 클릭 시 관련 디테일 내용 모달 연결 -->
+                        <button type="button" class="btn btn-outline-light rounded-pill" style=" align-self: flex-end;"
+                            data-bs-toggle="modal" data-bs-target="#serviceModal2">
+                            Jazz
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- [세번째 서비스 소개 영역] -->
+            <div class="col">
+                <div id="swuImg" class="card  text-bg-dark rounded-pill"> <!-- hover효과 : 110%커짐 -->
+                    <img src="images/Home_about_service_3.png" class="card-img " alt="슈플리3">
+                    <!-- [이미지 오버레이 버튼 영역] -->
+                    <div class="card-img-overlay align-items-center" style="display: flex; justify-content: center; ">
+                        <!-- 버튼 클릭 시 관련 디테일 내용 모달 연결 -->
+                        <button type="button" class="btn btn-outline-light rounded-pill" style=" align-self: flex-end;"
+                            data-bs-toggle="modal" data-bs-target="#serviceModal3">
+                            Hiphop
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- 안내 문구 영역 -->
+        <div class="text-white text-center">
+            <p class="lh-lg">3가지의 플레이리스트 중 당신의 취향에 꼭 맞는 플레이리스트를 찾아보세요.</p>
+        </div>
+    </section>
+
+    <!-- { 제작자 소개 영역 시작 id=about_producer } -->
+    <section id="about_producer" class=" d-flex flex-column justify-content-evenly align-items-center p-5">
+        <!-- [h2와 안내문구 영역] -->
+        <div class="text-center py-4">
+            <h2 class="fw-bold">제작자 소개</h2>
+            <p class="explain">항상 여러분들을 응원하는 마음을 담아 제작해온 저희들을 소개드립니다.<br />저희에게 전달할 내용이 있으시다면 아래 정보를 통해 연락해주세요.</p>
+        </div>
+        <!-- [제작자 소개 카드 영역] -->
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <!-- [첫번째 제작자 idcard 영역] -->
+            <div class="col">
+                <!-- 전체적인 둥글기와 hover효과 id : idCard 에 적용 -->
+                <div id="idCard" class="card">
+                    <!-- 이미지는 상단만 둥글려지도록 id : round1 스타일 적용, hover효과를 위해 card-img-top class사용 -->
+                    <img id="round1" src="images/Home_profile_img1.png" class="card-img-top img-fluid" alt="제작자1 이미지">
+                    <!-- 카드 바디 영역 -->
+                    <div class="card-body">
+                        <h5 class="card-title">박서연</h5>
+                        <p class="card-text text-muted">원예생명조경학과</p>
+                    </div>
+                    <!-- 카드 푸터 영역 - 내용구분과 디자인을 위해 소개 내용도 이곳에 넣었음 -->
+                    <div class="card-footer ">
+                        <p>비 전공자지만 웹 개발에 대한 흥미로 이 웹사이트를 제작하게 되었습니다. 사용자들에게 직관적이고 효율적인 웹사이트를 제공하여 음악을 즐기는 새로운 경험을 선사하고자 합니다. </p>
+                        <button type="button" class="btn btn-dark text-center rounded-pill mb-3 py-2"
+                            data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="email">Send
+                            Message<i class="bi bi-caret-right-fill"></i></button>
+                    </div>
+                </div>
+            </div>
+            <!-- [두번째 제작자 idcard 영역] -->
+            <div class="col">
+                <!-- 전체적인 둥글기와 hover효과 id : idCard 에 적용 -->
+                <div id="idCard" class="card">
+                    <!-- 이미지는 상단만 둥글려지도록 id : round1 스타일 적용, hover효과를 위해 card-img-top class사용 -->
+                    <img id="round1" src="images/Home_profile_img2.png" class="card-img-top img-fluid" alt="제작자2 이미지">
+                    <!-- 카드 바디 영역 -->
+                    <div class="card-body">
+                        <h5 class="card-title">송정연</h5>
+                        <p class="card-text text-muted">디지털미디어학과</p>
+                    </div>
+                    <!-- 카드 푸터 영역 - 내용구분과 디자인을 위해 소개 내용도 이곳에 넣었음 -->
+                    <div class="card-footer ">
+                        <p>디자인에 대한 열정으로 사용자들에게 아름다운 시각적 경험을 제공하기 위해 노력합니다. 강력한 UI/UX 디자인을 통해 사용자들이 플레이리스트를 쉽고 즐겁게 탐색할 수 있도록 돕고 싶습니다. </p>
+                        <button type="button" class="btn btn-dark text-center rounded-pill mb-3 py-2"
+                            data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="email">Send
+                            Message<i class="bi bi-caret-right-fill"></i></button>
+                    </div>
+                </div>
+            </div>
+            <!-- [세번째 제작자 idcard 영역] -->
+            <div class="col">
+                <!-- 전체적인 둥글기와 hover효과 id : idCard 에 적용 -->
+                <div id="idCard" class="card">
+                    <!-- 이미지는 상단만 둥글려지도록 id : round1 스타일 적용, hover효과를 위해 card-img-top class사용 -->
+                    <img id="round1" src="images/Home_profile_img3.png" class="card-img-top img-fluid" alt="제작자3 이미지">
+                    <!-- 카드 바디 영역 -->
+                    <div class="card-body">
+                        <h5 class="card-title">이세빈</h5>
+                        <p class="card-text text-muted">경제학과</p>
+                    </div>
+                    <!-- 카드 푸터 영역 - 내용구분과 디자인을 위해 소개 내용도 이곳에 넣었음 -->
+                    <div class="card-footer ">
+                        <p>비전공자로서서 창의성과 열정으로 도전하고 새로운 기술을 습득하며 성장해 나가는 과정이 흥미를 느끼며 사용자들이 음악을 즐기는 동시에 새로운 경험을 할 수 있는 웹사이트를 제작하였습니다.</p>
+                        <button type="button" class="btn btn-dark text-center rounded-pill mb-3 py-2"
+                            data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="email">Send
+                            Message<i class="bi bi-caret-right-fill"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- { 자주 묻는 질문 영역 시작 } -->
+    <section id="FAQ" class=" d-flex flex-column justify-content-evenly align-items-center text-white p-5"
+        style="background-color: #8D8374;">
+        <!-- [h2와 안내문구 영역] -->
+        <div class="text-center py-4">
+            <h2 class="fw-bold">자주묻는 질문</h2>
+            <p style="opacity: 70%;">도움이 될만한 질문들을 모아 정리했습니다.<br />이 외에 더 궁금한 사항이 있으시다면 하단을 확인해주시길 바랍니다.</p>
+        </div>
+
+        <!-- [FAQ 3개 영역] -->
+        <div class="faqPart d-flex flex-column justify-content-center align-items-center">
+            <!-- FAQ1 -->
+            <div class="FAQ1 mb-4">
+                <!-- 질문 버튼 : 콜렙스 활용해 인터랙션 적용 -->
+                <button class="btn btn-light  py-2" style="width: 80vw" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#faq1" aria-expanded="false" aria-controls="collapseExample">
+                    <span class="fw-bold">Q1. 슈플리는 유료 서비스인가요?</span>
+                </button>
+                <!-- 답변 영역 -->
+                <div class="collapse mt-2" style="width: 80vw" id="faq1">
+                    <div class="card card-body text-muted text-center" style="opacity: 80%;">
+                        저희는 여러분들께 최선의 서비스를 제공드리고자 노력하고 있습니다.<br /> 또한 그 결과물에 만족하고 더 발전하기 위해 노력 할 뿐, 어떠한 서비스 비용을 청구하지
+                        않습니다.
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ2 -->
+            <div class="FAQ2 mb-4">
+                <!-- 질문 버튼 : 콜렙스 활용해 인터랙션 적용 -->
+                <button class="btn btn-light py-2" style="width: 80vw" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#faq2" aria-expanded="false" aria-controls="collapseExample">
+                    <span class="fw-bold">Q2. 슈니들만 사용할 수 있나요? </span>
+                </button>
+                <!-- 답변 영역 -->
+                <div class="collapse mt-2" style="width: 80vw" id="faq2">
+                    <div class="card card-body text-muted text-center" style="opacity: 80%;">
+                        저희 서비스는 오직 슈니들을 위한 서비스입니다.<br /> 하지만 슈니들의 지인에게 추천하거나, 전달하는 것은 전혀 문제가 되지않으니 안심하시길 바랍니다. :)
+                    </div>
+                </div>
+            </div>
+            <!-- FAQ3 -->
+            <div class="FAQ3 mb-4">
+                <!-- 질문 버튼 : 콜렙스 활용해 인터랙션 적용 -->
+                <button class="btn btn-light py-2" style="width: 80vw" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#faq3" aria-expanded="false" aria-controls="collapseExample">
+                    <span class="fw-bold ">Q3. 노래는 바뀌지 않는건가요? </span>
+                </button>
+                <!-- 답변 영역 -->
+                <div class="collapse mt-2" style="width: 80vw" id="faq3">
+                    <div class="card card-body text-muted text-center" style="opacity: 80%;">
+                        저희 서비스는 저작권을 보호하고자 무료 음원만을 사용하고 있습니다.<br /> 따라서 매일매일 업데이트 되기는 어려우며, 짧게는 1달 길게는 3달 정도 소요됩니다.
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- 푸터 영역 시작 -->
+    <footer style="background-color: black;">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 py-5 text-white">
+            <!-- [브랜드 로고 영역] -->
+            <div class="col px-4 ">
+                <a class="navbar-brand" href="Main.html"><!-- 로고 클릭 시 메인페이지로 이동 -->
+                    <h4 class=" ms-4">SWUPLY</h4>
+                    <p class="explain ms-4">우리 슈플리는 언제나 슈니들과 함께합니다.</p>
+                </a><br />
+                <a href="https://www.swu.ac.kr/index.do" target="_blank"
+                    class="btn btn-light rounded-circle bt-lg ms-4 m-2"><i class="bi bi-link "></i></a>SWU
+                <a href="https://www.bensound.com" target="_blank"
+                    class="btn btn-light rounded-circle bt-lg ms-4 m-2"><i class="bi bi-music-note-beamed"></i></a>MUSIC
+                <br />
+            </div>
+
+            <!-- 우선은 비워둔 영역 -->
+            <div class="col "></div>
+
+            <!-- [홈 콘텐츠 영역] -->
+            <div class="col ">
+                <h5 class=" ms-4">홈</h5>
+                <ul class="nav flex-column ">
+                    <li class="nav-item mb-2  ms-4"><a href="#about_service" class="nav-link p-0 text-white ">서비스 소개</a>
+                    </li>
+                    <li class="nav-item mb-2  ms-4"><a href="#about_producer" class="nav-link p-0 text-white ">제작자
+                            소개</a>
+                    </li>
+                    <li class="nav-item mb-2  ms-4"><a href="#FAQ" class="nav-link p-0 text-white">FAQ</a></li>
+                </ul>
+            </div>
+
+            <!-- [슈플리 모음 영역] -->
+            <div class="col">
+                <h5 class=" ms-4">슈플리 모음</h5>
+                <ul class="nav flex-column ">
+                    <li class="nav-item mb-2  ms-4"><a href="content1.html" class="nav-link p-0 text-white">1번 슈플리</a>
+                    </li>
+                    <li class="nav-item mb-2  ms-4"><a href="content2.html" class="nav-link p-0 text-white">2번 슈플리</a>
+                    </li>
+                    <li class="nav-item mb-2  ms-4"><a href="content3.html" class="nav-link p-0 text-white">3번 슈플리</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="text-white text-center py-2" style="border-top: 1px dashed #A4A4A4;">
+            <p class=""><i class="bi bi-c-circle me-1"></i>ALL RIGHT RESUALT BY <span class="text-info">SWUPLY</span>
+            </p>
+        </div>
+    </footer>
+    <!-- 푸터 영역 끝 -->
+
+
+    <!-- {Modal} -->
+
+    <!-- {서비스 소개 모달1 영역 시작} -->
+    <div class="modal fade" id="serviceModal1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <!-- 수직 정렬되며, 길 경우 스크롤이 가능한 모달  -->
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <!-- 모달 헤더 영역 -->
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Classic</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <!-- 모달 바디 영역 -->
+                <div class="modal-body">
+                    <img src="images/Home_about_service_1_detail.png" class="card-img-top img-fluid" alt="서비스1 이미지">
+                    <h5 class="p-2">혼자 공부하는 새벽을<br>함께해 줄 노래</h5>
+                    <p class="p-2">시티팝 느낌이 나는 새벽 공부할 때 듣기 좋은 <span class="accent">잔잔한 노래</span>와<br>마음을 차분하게 해줄 수 있는 플레이리스트.</p>
+                </div>
+                <!-- 모달 푸터 영역 -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-dark rounded-pill"
+                        data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-dark rounded-pill">Understood</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- {서비스 소개 모달2 영역 시작} -->
+    <div class="modal fade" id="serviceModal2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <!-- 수직 정렬되며, 길 경우 스크롤이 가능한 모달  -->
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <!-- 모달 헤더 영역 -->
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Jazz</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <!-- 모달 바디 영역 -->
+                <div class="modal-body">
+                    <img src="images/Home_about_service_2_detail.png" class="card-img-top img-fluid" alt="서비스2 이미지">
+                    <h5 class="p-2">낯선 바에서 듣는 듯한 재즈</h5>
+                    <p class="p-2">공부와 업무를 위한 편안한 <span class="accent">재즈</span>,<br> 내 방을 빈티지 카페로 바꾸고 싶다면</p>
+                </div>
+                <!-- 모달 푸터 영역 -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-dark rounded-pill"
+                        data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-dark rounded-pill">Understood</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- {서비스 소개 모달3 영역 시작} -->
+    <div class="modal fade" id="serviceModal3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <!-- 수직 정렬되며, 길 경우 스크롤이 가능한 모달  -->
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <!-- 모달 헤더 영역 -->
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Hiphop</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <!-- 모달 바디 영역 -->
+                <div class="modal-body">
+                    <img src="images/Home_about_service_3_detail.png" class="card-img-top img-fluid" alt="서비스3 이미지">
+                    <h5 class="p-2">졸릴 때 듣기 좋은 신나는 노동요</h5>
+                    <p class="p-2">졸리거나 기분전환이 필요할 때 듣기 좋은 노래,<br><span class="accent">빠른 비트</span>와 경쾌한 음악이 어울려 에너지를 충전하고 싶다면</p>
+                </div>
+                <!-- 모달 푸터 영역 -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-dark rounded-pill"
+                        data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-dark rounded-pill">Understood</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 이메일 전송 모달 영역 시작 -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- 모달 헤더 영역 -->
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">New message</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <!-- 모달 바디 영역 -->
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Recipient:</label>
+                            <input type="text" class="form-control" id="recipient-name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message-text" class="col-form-label">Message:</label>
+                            <textarea class="form-control" id="message-text"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <!-- 모달 푸터 영역 -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-dark rounded-pill"
+                        data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-dark rounded-pill">Send message</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+/* 네비게이션 바 스타일 정의 */
+.navbar {
+    margin-bottom: 50px;
+    /* 네비게이션 바 아래 여백 설정 */
+    box-shadow: 0px 1px 30px black;
+    /* 네비게이션 바 그림자 설정 */
+}
+
+
+/* id : subMain 의 스타일 정의 */
+#subMain {
+    background-image: url("../images/SubPage_subMain_bg.png");
+    /* 배경 이미지 */
+    background-size: cover;
+    /* 배경 이미지 맞춤 */
+    width: auto; height: 354px;  /*영역 정의*/
+}
+
+#carouselImg{
+    transform: scale(1.0);
+    /*사이즈 100%*/
+    transition: transform .5s;
+    /* 0.5초동안 애니메이션 */
+}
+
+#carouselImg:hover{
+    transform: scale(1.1);
+    /*사이즈 110%*/
+    transition: transform .5s;
+    /* 0.5초동안 애니메이션 */
+}
+
+/* h2에는 fs속성도 지정 */
+h2 {
+    font-family: 'NanumGothic';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+}
+
+/* 설명부분 color와 fw-400지정 */
+.explain {
+    font-family: 'NanumGothic';
+    font-style: normal;
+    font-weight: 400;
+
+    color: #8D8374;
+}

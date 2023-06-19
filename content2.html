@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SWUPLY</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+
+  <!-- 스타일시트 -->
+  <link rel="stylesheet" href="css/content_style.css">
+
+  <!-- 구글폰트 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+
+
+<body>
+  <!-- { 네비게이션 바 영역 시작 }  -->
+  <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
+    <div class="container-fluid ms-5">
+      <!-- [브랜드 로고 영역] -->
+      <a class="navbar-brand" href="Main.html"><!-- 로고 클릭 시 메인페이지로 이동 -->
+        <i class="bi bi-vinyl"></i>
+        <span class="ms-1">SWUPLY</span>
+      </a>
+
+      <!-- [반응형 위한 토글 버튼] -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- [네비게이션 내용 (토글과 id연결)] -->
+      <div class="collapse navbar-collapse" style="margin-left: auto;" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <!-- [홈] -->
+          <li class="nav-item">
+            <a class="nav-link" href="Main.html">홈</a>
+          </li>
+          <!-- [슈플리 소개] -->
+          <li class="nav-item">
+            <a class="nav-link" href="Main.html#about_service">슈플리 소개</a>
+          </li>
+          <!-- [제작자 소개] -->
+          <li class="nav-item">
+            <a class="nav-link" href="Main.html#about_producer">제작자 소개</a>
+          </li>
+          <!-- [슈플리 듣기 - 드롭다운] -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle  me-5" href="check_my_music.html" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              슈플리 듣기
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark ">
+              <!-- 어두운 테마 사용 및 3가지의 드롭다운 내용 -->
+              <li><a class="dropdown-item text-white " href="content1.html">1번 슈플리</a></li>
+              <li><a class="dropdown-item text-white" href="content2.html">2번 슈플리</a></li>
+              <li><a class="dropdown-item text-white" href="content3.html">3번 슈플리</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- { 네비게이션 바 영역 끝 }  -->
+
+
+
+  <!--헤더 캐러셀 시작 -->
+  <header>
+    <div id="carouselHead" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000"> <!-- 캐러셀 1 -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/004.png" class="d-block" width="100%" height="100%" alt="사진1-1">
+          <div class="carousel-caption d-none d-md-block">
+            <h1 class="fw-bold">낯선 바에서 듣는 듯한 재즈</h1>
+            <p class="mt-4">공부와 업무를 위한 편안한 재즈,<br> 내 방을 빈티지 카페로 바꾸고 싶다면</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/005.png" class="d-block" width="100%" height="100%" alt="사진1-2"> <!-- 캐러셀 2 -->
+          <div class="carousel-caption d-none d-md-block">
+            <h1 class="fw-bold ">낯선 바에서 듣는 듯한 재즈</h1>
+            <p class="mt-4">공부와 업무를 위한 편안한 재즈,<br> 내 방을 빈티지 카페로 바꾸고 싶다면</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/006.png" class="d-block" width="100%" height="100%" alt="사진1-3"> <!-- 캐러셀 3 -->
+          <div class="carousel-caption d-none d-md-block">
+            <h1 class="fw-bold ">낯선 바에서 듣는 듯한 재즈</h1>
+            <p class="mt-4">공부와 업무를 위한 편안한 재즈,<br> 내 방을 빈티지 카페로 바꾸고 싶다면</p>
+          </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselHead" data-bs-slide="prev">
+          <!-- 캐러셀 좌우 버튼 -->
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselHead" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+  </header>
+  <!-- 헤더 캐러셀 끝 -->
+
+  <!-- [메인 시작] -->
+  <!-- 첫번째 섹션 -->
+  <section class="bg1 row container-fluid justify-content-center align-items-center" id="content1-1">
+    <div class="col-lg-5 p-5 ">
+      <iframe width="100%" height="315" src="https://www.youtube.com/embed/KJLjk_HOcDE" title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+    </div>
+
+    <div class="col-lg-5 px-5">
+      <h3 class="fw-bold mb-3">The jazz piano</h3>
+      <p class="lh-lg">환상적인 재즈 피아노 선율이 돋보이는 곡. 재즈 음악의 아름다움과 피아노의 매력을 느껴보세요. 그리고 그 속에서 흥겨운 리듬과 멜로디의 여운을 만끽해보세요.</p>
+      <!-- 인라인 스타일을 통한 버튼 상세디자인 -->
+      <a class="btn btn-outline-dark rounded-pill my-5"
+        style="font-family: 'NanumGothic'; font-style: normal; font-size: 25px; font-weight: 700; border-width: 3px; gap: 10px; padding: 8px 48px;"
+        href="content1-1-4.html" role="button">Play<i class="bi bi-caret-right-fill"></i></a>
+    </div>
+  </section>
+
+  <!-- 두번째 섹션 -->
+  <section class="bg2 row container-fluid justify-content-center align-items-center" id="content1-2">
+    <!-- order-lg-1로 lg이상에선 앞에 글자가 오게함 lg보다 작을땐 첫번째 세번째 섹션과 마찬 가지로 영상-소개글 순서로 나타남 -->
+    <div class="col-lg-5 px-5 order-2 order-lg-1">
+      <h3 class="fw-bold mb-3"> All that</h3>
+      <p class="lh-lg">화려하고 중독적인 사운드. 자유로움과 열정을 느낄 수 있 경쾌한 음악. 화려한 음악성과 매력적인 가사로 인간의 다양성과 감성을 충족시켜주는 특별한 곡을 느껴보세요.</p>
+      <!-- 인라인 스타일을 통한 버튼 상세디자인 -->
+      <a class="btn btn-outline-dark rounded-pill mt-4" style="font-family: 'NanumGothic'; font-style: normal; font-size: 25px; font-weight: 700; border-width: 3px;
+          gap: 10px; padding: 8px 48px;" href="content1-1-5.html" role="button">Play<i
+          class="bi bi-caret-right-fill"></i></a>
+    </div>
+
+    <div class="col-lg-5 p-5 order-1 order-lg-2">
+      <iframe width="100%" height="315" src="https://www.youtube.com/embed/qS1SMSnFOS4" title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <!-- 세번째 섹션 -->
+  <section class="bg3 row container-fluid justify-content-center align-items-center" id="content1-3">
+    <div class="col-lg-5 p-5 ">
+      <iframe width="100%" height="315" src="https://www.youtube.com/embed/QuAwFCurESk" title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+    </div>
+
+    <div class="col-lg-5 px-5">
+      <h3 class="fw-bold mb-3">Tenderness</h3>
+      <p class="lh-lg">부드러운 감성과 애정 어린 멜로디가 어우러진 아름다운 노래. 서정적인 분위기와 함께 감성적인 여운을 느껴보세요.</p>
+      <!-- 인라인 스타일을 통한 버튼 상세디자인 -->
+      <a class="btn btn-outline-dark rounded-pill  my-5"
+        style="font-family: 'NanumGothic'; font-style: normal; font-size: 25px; font-weight: 700; border-width: 3px; gap: 10px; padding: 8px 48px;"
+        href="content1-1-6.html" role="button">Play<i class="bi bi-caret-right-fill"></i></a>
+    </div>
+  </section>
+  <!-- 메인끝 -->
+
+  <!-- 푸터 영역 시작 -->
+  <footer style="background-color: black;">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 py-5 text-white">
+      <!-- [브랜드 로고 영역] -->
+      <div class="col px-4 ">
+        <a class="navbar-brand" href="Main.html"><!-- 로고 클릭 시 메인페이지로 이동 -->
+          <h4 class=" ms-4">SWUPLY</h4>
+          <p class="explain ms-4">우리 슈플리는 언제나 슈니들과 함께합니다.</p>
+        </a><br />
+        <a href="https://www.swu.ac.kr/index.do" target="_blank" class="btn btn-light rounded-circle bt-lg ms-4 m-2"><i
+            class="bi bi-link "></i></a>SWU
+        <a href="https://www.bensound.com" target="_blank" class="btn btn-light rounded-circle bt-lg ms-4 m-2"><i
+            class="bi bi-music-note-beamed"></i></a>MUSIC
+        <br />
+      </div>
+
+      <!-- 우선은 비워둔 영역 -->
+      <div class="col "></div>
+
+      <!-- [홈 콘텐츠 영역] -->
+      <div class="col ">
+        <h5 class=" ms-4">홈</h5>
+        <ul class="nav flex-column ">
+          <li class="nav-item mb-2  ms-4"><a href="Main.html#about_service" class="nav-link p-0 text-white ">서비스 소개</a>
+          </li>
+          <li class="nav-item mb-2  ms-4"><a href="Main.html#about_producer" class="nav-link p-0 text-white ">제작자
+              소개</a>
+          </li>
+          <li class="nav-item mb-2  ms-4"><a href="Main.html#FAQ" class="nav-link p-0 text-white">FAQ</a></li>
+        </ul>
+      </div>
+
+      <!-- [슈플리 모음 영역] -->
+      <div class="col">
+        <h5 class=" ms-4">슈플리 모음</h5>
+        <ul class="nav flex-column ">
+          <li class="nav-item mb-2  ms-4"><a href="content1.html" class="nav-link p-0 text-white">1번 슈플리</a>
+          </li>
+          <li class="nav-item mb-2  ms-4"><a href="content2.html" class="nav-link p-0 text-white">2번 슈플리</a>
+          </li>
+          <li class="nav-item mb-2  ms-4"><a href="content3.html" class="nav-link p-0 text-white">3번 슈플리</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="text-white text-center py-2" style="border-top: 1px dashed #A4A4A4;">
+      <p class=""><i class="bi bi-c-circle me-1"></i>ALL RIGHT RESUALT BY <span class="text-info">SWUPLY</span>
+      </p>
+    </div>
+  </footer>
+  <!-- 푸터 영역 끝 -->
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+
+
+body {
+
+    background-repeat: no-repeat;
+    /* 배경 이미지 반복 제거 */
+    background-image: url("../images/Mask_group.png");
+    background-size: cover;
+    background-color: rgb(245, 242, 238)
+}
+
+/* 사진 원 모양 */
+.circle-image-container {
+    width: 450px;
+    /* 이미지 컨테이너의 가로 크기를 조정합니다. */
+    height: 450px;
+    /* 이미지 컨테이너의 세로 크기를 조정합니다. */
+    border-radius: 50%;
+    /* 원 모양으로 이미지 컨테이너를 만듭니다. */
+    overflow: hidden;
+    /* 원 모양으로 잘린 이미지를 보여주기 위해 overflow를 hidden으로 설정합니다. */
+    left: 30%;
+    /* 이미지 컨테이너를 수평 방향으로 중앙에 위치시킵니다. */
+    bottom: 0.5%;
+    /* 이미지 컨테이너를 수직 방향으로 중앙에 위치시킵니다. */
+
+
+    border: 5px solid #A29B92;
+    /* 테두리 스타일과 색상을 설정합니다. */
+    box-shadow: 0px 0px 20px #A4A4A4;
+
+
+}
+
+.circle-image-container img {
+    width: 100%;
+    /* 이미지가 원 안에 꽉 차도록 설정합니다. */
+    height: 100%;
+    /* 이미지가 원 안에 꽉 차도록 설정합니다. */
+    object-fit: cover;
+    /* 이미지가 원 안에 꽉 차도록 설정합니다. */
+    animation: rotate-image 1000s linear infinite;
+    /* 이미지를 무한히 회전하는 애니메이션을 적용합니다. */
+    cursor: pointer;
+    /* 이미지에 마우스 커서를 변경하여 클릭 가능함을 나타냅니다. */
+
+
+
+
+}
+
+/* 이미지 회전 */
+@keyframes rotate-image {
+    0% {
+        transform: rotate(0deg);
+        /* 회전 시작 각도 */
+    }
+
+    100% {
+        transform: rotate(360deg);
+        /* 회전 종료 각도 */
+    }
+}
+
+/* 이미지 회전 */
